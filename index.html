@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirolos Magdy — Data Engineer · Analytics Engineer · Data Analyst</title>
+  <meta name="description" content="Kirolos Magdy — Data Engineer, Analytics Engineer and Data Analyst from Alexandria, Egypt. ETL/ELT pipelines, dbt + Snowflake models, Power BI dashboards. Open to full-time roles." />
+  <meta name="theme-color" content="#0d0b09" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kirolos Magdy — Data Engineer · Analytics Engineer · Data Analyst" />
+  <meta property="og:description" content="Pipelines that keep data correct, models the business can trust, and dashboards people act on." />
+  <meta property="og:image" content="assets/img/kirolos-avatar.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/img/kirolos-cutout.webp" as="image" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kirolos Magdy",
+    "jobTitle": ["Data Engineer", "Analytics Engineer", "Data Analyst"],
+    "address": { "@type": "PostalAddress", "addressLocality": "Alexandria", "addressCountry": "EG" },
+    "email": "mailto:kirolosmagdy242@gmail.com",
+    "alumniOf": "Alexandria University",
+    "sameAs": ["https://github.com/kirlosmagdy", "https://linkedin.com/in/kirolos-magdy1"]
+  }
+  </script>
+</head>
+<body>
+  <!-- intro loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <span>K</span><span>M</span>
+    </div>
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-text mono">initialising data universe…</div>
+  </div>
+
+  <!-- 3D background -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Kirolos Magdy — home">
+        <span class="logo-mark">KM</span>
+        <span class="logo-text">Kirolos<b>.</b>data</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#roles">Roles</a>
+        <a href="#journey">Journey</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="icon-btn" href="https://github.com/kirlosmagdy" target="_blank" rel="noopener" aria-label="GitHub" data-icon="github"></a>
+        <a class="icon-btn" href="https://linkedin.com/in/kirolos-magdy1" target="_blank" rel="noopener" aria-label="LinkedIn" data-icon="linkedin"></a>
+        <a class="btn btn-sm btn-outline" href="#contact"><i data-icon="mail"></i><span>Hire me</span></a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" data-scene="core">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title reveal">
+            <span class="hero-hello">Hi, I'm</span>
+            <span class="hero-name">Kirolos <span class="grad-text">Magdy</span></span>
+          </h1>
+          <p class="hero-lead reveal">
+            I turn raw, messy data into <strong>reliable pipelines</strong>, <strong>trusted models</strong> and
+            <strong>insights people can act on</strong> — because data should be <em>right</em>, not just moving.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#roles" class="btn btn-primary btn-lg"><span>Explore the three roles</span><i data-icon="arrowRight"></i></a>
+            <a href="#contact" class="btn btn-ghost btn-lg btn-contact"><i data-icon="send"></i><span>Get in touch</span></a>
+          </div>
+          <div class="hero-roles reveal" id="heroRoles"></div>
+        </div>
+
+        <div class="hero-visual scene-anchor" id="heroVisual">
+          <div class="portrait" id="portrait">
+            <div class="orbit orbit-a"><i></i></div>
+            <div class="orbit orbit-b"><i></i></div>
+            <div class="disc"></div>
+            <div class="disc-ring"></div>
+            <div class="portrait-cut"><img src="assets/img/kirolos-cutout.webp" alt="Portrait of Kirolos Magdy" width="800" height="746" /></div>
+            <span class="float-chip c1">Airflow</span>
+            <span class="float-chip c2">dbt</span>
+            <span class="float-chip c3">Snowflake</span>
+            <span class="float-chip c4">Power BI</span>
+            <span class="float-chip c5">SQL</span>
+            <span class="float-chip c6">Spark</span>
+            <div class="badge-card">
+              <span class="badge-ico" data-icon="cap"></span>
+              <div><b>Alexandria University</b><small>B.Sc. Computers &amp; Data Science · ’26</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-stats reveal">
+          <div class="stat"><span>Roles, one standard</span><b data-count="3" data-suffix="">0</b></div>
+          <div class="stat"><span>Public repositories</span><b data-count="22" data-suffix="">0</b></div>
+          <div class="stat"><span>Records per pipeline run</span><b data-count="10" data-suffix="K+">0</b></div>
+          <div class="stat"><span>Load accuracy</span><b data-count="99.5" data-suffix="%" data-decimals="1">0</b></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" data-scene="wave">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="eyebrow reveal"><span class="idx">01</span><span class="line"></span>About me</div>
+          <h2 class="section-title reveal">Fresh graduate. <br /><span class="grad-text">Production mindset.</span></h2>
+          <p class="reveal">
+            I'm a Computers &amp; Data Science graduate from <strong>Alexandria University</strong> who learned data the hands-on way:
+            orchestrating Airflow pipelines in Docker, modeling star schemas in dbt and Snowflake, and shipping Power BI dashboards that answer real business questions.
+          </p>
+          <p class="reveal">
+            Since 2024 I've been freelancing — building an automated lead-generation pipeline for an export business across five countries.
+            I care about the boring parts that make data trustworthy: validation, tests, idempotent loads and documentation.
+          </p>
+          <ul class="values reveal">
+            <li><span data-icon="shield"></span><div><b>Correctness first</b><small>Tests, data-quality checks, and validation before dashboards.</small></div></li>
+            <li><span data-icon="bolt"></span><div><b>Automate the repetitive</b><small>If it runs twice, it becomes a pipeline.</small></div></li>
+            <li><span data-icon="layers"></span><div><b>Model for reuse</b><small>Clean layers, star schemas and documented lineage.</small></div></li>
+            <li><span data-icon="spark"></span><div><b>AI-assisted, human-verified</b><small>I use AI tools to move faster — and check every result.</small></div></li>
+          </ul>
+        </div>
+
+        <div class="terminal tilt reveal" data-tilt="6">
+          <div class="term-bar">
+            <i></i><i></i><i></i>
+            <span class="mono">kirolos.py</span>
+          </div>
+<pre class="term-body mono"><code><span class="k">class</span> <span class="f">Kirolos</span>(<span class="f">DataProfessional</span>):
+    <span class="s">"""Makes data right, not just moving."""</span>
+
+    roles     = [<span class="s">"Data Engineer"</span>,
+                 <span class="s">"Analytics Engineer"</span>,
+                 <span class="s">"Data Analyst"</span>]
+    based_in  = <span class="s">"Alexandria, Egypt"</span>
+    education = <span class="s">"B.Sc. Computers &amp; Data Science"</span>
+    stack     = [<span class="s">"Python"</span>, <span class="s">"SQL"</span>, <span class="s">"Airflow"</span>,
+                 <span class="s">"dbt"</span>, <span class="s">"Snowflake"</span>, <span class="s">"Power BI"</span>]
+
+    <span class="k">def</span> <span class="f">hire</span>(self, team):
+        <span class="k">return</span> team.<span class="f">ship</span>(trusted_data=<span class="n">True</span>)
+
+<span class="c"># &gt;&gt;&gt; Kirolos().open_to_work</span>
+<span class="c"># </span><span class="n">True</span><span class="cursor-blink">▋</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLES: interactive 3D deck + detail stage -->
+    <section class="section roles" id="roles" data-scene="core">
+      <div class="container">
+        <div class="section-head center">
+          <div class="eyebrow reveal"><span class="line"></span>02 · Pick a lens<span class="line"></span></div>
+          <h2 class="section-title reveal">One data mind. <span class="grad-text">Three roles.</span></h2>
+          <p class="section-sub reveal">Each role has its own tailored CV and the projects that prove it. <b class="hint-click">Click a card</b> to flip it and explore that role.</p>
+        </div>
+
+        <div class="role-deck" id="roleDeck" role="tablist" aria-label="Roles"></div>
+
+        <div class="role-stage" id="roleStage" hidden>
+          <div class="stage-shell">
+            <div class="stage-bar">
+              <div class="stage-tabs" id="stageTabs" role="tablist"></div>
+              <div class="stage-nav">
+                <button class="icon-btn" id="stagePrev" aria-label="Previous role" data-icon="arrowLeft"></button>
+                <span class="stage-count mono" id="stageCount">01 / 03</span>
+                <button class="icon-btn" id="stageNext" aria-label="Next role" data-icon="arrowRight"></button>
+                <button class="icon-btn stage-close" id="stageClose" aria-label="Close role details" data-icon="close"></button>
+              </div>
+            </div>
+            <div class="stage-viewport" id="stageViewport"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey" data-scene="wave">
+      <div class="container">
+        <div class="section-head center">
+          <div class="eyebrow reveal"><span class="line"></span>03 · Journey<span class="line"></span></div>
+          <h2 class="section-title reveal">Experience, education <span class="grad-text">&amp; certifications</span></h2>
+          <div class="journey-legend reveal" id="journeyLegend"></div>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" data-scene="wave">
+      <div class="container">
+        <div class="section-head split">
+          <div>
+            <div class="eyebrow reveal"><span class="idx">04</span><span class="line"></span>Projects</div>
+            <h2 class="section-title reveal">Selected <span class="grad-text">projects</span></h2>
+            <p class="section-sub reveal">Every project from my three CVs. Filter by role, then <b class="hint-click">click any card</b> to open it.</p>
+          </div>
+          <div class="filters reveal" id="projFilters" role="tablist" aria-label="Filter projects by role"></div>
+        </div>
+        <div class="proj-spot-wrap" id="projSpot"></div>
+        <div class="proj-grid" id="projGrid"></div>
+        <div class="center reveal" style="margin-top:2.5rem">
+          <a class="btn btn-ghost" href="https://github.com/kirlosmagdy?tab=repositories" target="_blank" rel="noopener"><i data-icon="github"></i><span>See all 22 repositories</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" data-scene="core">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="eyebrow reveal"><span class="idx">05</span><span class="line"></span>Contact</div>
+          <h2 class="section-title big reveal">Let's make your data <span class="grad-text">trustworthy.</span></h2>
+          <p class="section-sub reveal">I'm actively looking for my first full-time role as a Data Engineer, Analytics Engineer or Data Analyst. I reply within 24 hours.</p>
+          <div class="contact-list reveal">
+            <button class="contact-item" id="copyEmail" data-email="kirolosmagdy242@gmail.com">
+              <span class="ci-ico" data-icon="mail"></span>
+              <span class="ci-text"><small>Email · click to copy</small><b>kirolosmagdy242@gmail.com</b></span>
+              <span class="ci-tag mono" id="copyTag">copy</span>
+            </button>
+            <div class="contact-item ci-phone">
+              <span class="ci-ico" data-icon="phone"></span>
+              <span class="ci-text"><small>Phone · WhatsApp</small><b>+20 120 766 7431</b></span>
+              <span class="ci-actions">
+                <a class="ci-btn wa" href="https://wa.me/201207667431" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp"><i data-icon="whatsapp"></i><span>WhatsApp</span></a>
+                <a class="ci-btn" href="tel:+201207667431" aria-label="Call +20 120 766 7431" title="Call"><i data-icon="phone"></i><span>Call</span></a>
+              </span>
+            </div>
+            <a class="contact-item" href="https://linkedin.com/in/kirolos-magdy1" target="_blank" rel="noopener">
+              <span class="ci-ico" data-icon="linkedin"></span>
+              <span class="ci-text"><small>LinkedIn</small><b>in/kirolos-magdy1</b></span>
+              <span class="ci-tag mono">open</span>
+            </a>
+            <a class="contact-item" href="https://github.com/kirlosmagdy" target="_blank" rel="noopener">
+              <span class="ci-ico" data-icon="github"></span>
+              <span class="ci-text"><small>GitHub</small><b>github.com/kirlosmagdy</b></span>
+              <span class="ci-tag mono">open</span>
+            </a>
+          </div>
+
+          <div class="freelance reveal">
+            <div class="fl-head"><h3>Hire me as a freelancer</h3><span class="mono">5 platforms</span></div>
+            <div class="fl-grid" id="freelanceList"></div>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <h3>Send a message</h3>
+          <div class="field">
+            <input id="f-name" name="name" type="text" required placeholder=" " autocomplete="name" />
+            <label for="f-name">Your name</label>
+          </div>
+          <div class="field">
+            <input id="f-email" name="email" type="email" required placeholder=" " autocomplete="email" />
+            <label for="f-email">Work email</label>
+          </div>
+          <div class="field">
+            <select id="f-role" name="role">
+              <option>Data Engineer</option>
+              <option>Analytics Engineer</option>
+              <option>Data Analyst</option>
+              <option>Freelance project</option>
+              <option>Something else</option>
+            </select>
+            <label for="f-role" class="static">I'm reaching out about</label>
+          </div>
+          <div class="field">
+            <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
+            <label for="f-msg">Message</label>
+          </div>
+          <button class="btn btn-primary btn-lg full" type="submit"><span>Send message</span><i data-icon="send"></i></button>
+          <p class="form-note mono" id="formNote">// usually replies within 24h</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Kirolos Magdy · Alexandria, Egypt</span>
+      <span class="mono dim">built with three.js · vanilla js · lots of ☕</span>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- floating role dock (visible inside role sections) -->
+  <div class="role-dock" id="roleDock" aria-label="Role quick switch"></div>
+
+  <!-- CV modal -->
+  <dialog class="cv-modal" id="cvModal">
+    <div class="cv-modal-head">
+      <b id="cvModalTitle">CV</b>
+      <div class="cv-modal-actions">
+        <a class="btn btn-sm btn-primary" id="cvModalDownload" download><i data-icon="download"></i><span>Download</span></a>
+        <a class="btn btn-sm btn-ghost" id="cvModalOpen" target="_blank" rel="noopener"><i data-icon="external"></i><span>New tab</span></a>
+        <button class="icon-btn" id="cvModalClose" aria-label="Close" data-icon="close"></button>
+      </div>
+    </div>
+    <div class="cv-modal-body">
+      <iframe id="cvFrame" title="CV preview"></iframe>
+    </div>
+  </dialog>
+
+  <!-- expanded project view (opens when a project card is clicked) -->
+  <div class="pv" id="projectView" hidden>
+    <div class="pv-backdrop" data-pv-close></div>
+    <article class="pv-card" id="pvCard" role="dialog" aria-modal="true" aria-labelledby="pvTitle" tabindex="-1">
+      <div class="pv-bar">
+        <span class="pv-crumb mono" id="pvCrumb"></span>
+        <div class="pv-nav">
+          <button class="icon-btn" id="pvPrev" aria-label="Previous project" data-icon="arrowLeft"></button>
+          <span class="pv-count mono" id="pvCount"></span>
+          <button class="icon-btn" id="pvNext" aria-label="Next project" data-icon="arrowRight"></button>
+          <button class="icon-btn" data-pv-close aria-label="Close project" data-icon="close"></button>
+        </div>
+      </div>
+      <div class="pv-body" id="pvBody"></div>
+    </article>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- plain scripts (no modules) so the site also works when opened directly from a folder -->
+  <script src="assets/vendor/three.global.min.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/scene.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
